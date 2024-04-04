@@ -4,6 +4,9 @@ import { SiProtondrive } from "react-icons/si";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
+import { saveJobApplication } from "../../Utility/localStorage";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -15,6 +18,13 @@ const JobDetails = () => {
 
     const job = jobs.find(job => job.id === jobIdParse)
     const {id, logo,job_title,company_name,remote_or_onsite,location,job_type,salary,job_description,job_responsibility,educational_requirements,experiences,contact_information} = job
+
+    const handleApplyJob = () => {
+        saveJobApplication(id)
+        toast('Applied successfully')
+    }
+
+
     return (
         <div>
             <h1 className="text-3xl font-extrabold text-center mb-5">Job Details</h1>
@@ -38,10 +48,11 @@ const JobDetails = () => {
                     <span className="text-xl"><MdLocationOn className=""></MdLocationOn><span className="font-bold">Address : </span>{contact_information.address}</span>
 
 
-                    <button className="py-2 w-full bg-blue-600 rounded-lg my-2">Apply Now</button>
+                    <button onClick={handleApplyJob} className="py-2 w-full bg-blue-600 rounded-lg my-2">Apply Now</button>
                    
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
