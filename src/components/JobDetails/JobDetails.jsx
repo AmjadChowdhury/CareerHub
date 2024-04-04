@@ -13,10 +13,9 @@ import 'react-toastify/dist/ReactToastify.css';
 const JobDetails = () => {
     const jobs = useLoaderData()
     const {jobId} = useParams()
-    const jobIdParse = parseInt(jobId)
     // console.log(jobs,jobId,jobIdParse)
 
-    const job = jobs.find(job => job.id === jobIdParse)
+    const job = jobs.find(job => job.id == jobId)
     const {id, logo,job_title,company_name,remote_or_onsite,location,job_type,salary,job_description,job_responsibility,educational_requirements,experiences,contact_information} = job
 
     const handleApplyJob = () => {
