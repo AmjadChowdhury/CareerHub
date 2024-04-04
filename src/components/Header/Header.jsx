@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
+import './Header.css'
 
 const Header = () => {
     const links = <>
-     <li><NavLink to="/">Home</NavLink></li>
-     <li><NavLink to="/jobs">Jobs</NavLink></li>
-     <li><NavLink to="/applied">Applied Jobs</NavLink></li>
-     <li><NavLink to="/blog">Blog</NavLink></li>
+     <li className="text-purple-600 font-bold"><NavLink to="/">Home</NavLink></li>
+     <li className="text-purple-600 font-bold"><NavLink to="/applied">Applied Jobs</NavLink></li>
+     <li className="text-purple-600 font-bold"><NavLink to="/blog">Blog</NavLink></li>
     </>
   return (
     <div>
@@ -35,7 +35,7 @@ const Header = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl md:text-2xl font-extrabold text-blue-950">CareerHub</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -43,7 +43,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="btn bg-purple-500 text-white font-bold">Hire me</a>
         </div>
       </div>
     </div>
