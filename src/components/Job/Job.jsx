@@ -1,6 +1,8 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+
 
 
 const Job = ({ job }) => {
@@ -42,5 +44,9 @@ const Job = ({ job }) => {
     </div>
   );
 };
+
+Job.propTypes = {
+  job : PropTypes.object
+}
 
 export default Job;
