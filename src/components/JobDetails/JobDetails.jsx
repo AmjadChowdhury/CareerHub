@@ -16,7 +16,7 @@ const JobDetails = () => {
     // console.log(jobs,jobId,jobIdParse)
 
     const job = jobs.find(job => job.id == jobId)
-    const {id, logo,job_title,company_name,remote_or_onsite,location,job_type,salary,job_description,job_responsibility,educational_requirements,experiences,contact_information} = job
+    const {id,job_title,salary,job_description,job_responsibility,educational_requirements,experiences,contact_information} = job
 
     const handleApplyJob = () => {
         saveJobApplication(id)

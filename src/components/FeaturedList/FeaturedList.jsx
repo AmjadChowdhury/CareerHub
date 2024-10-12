@@ -14,7 +14,7 @@ const FeaturedList = () => {
     },[])
     return (
         <div>
-            <h1 className="text-2xl text-center">This is featured List</h1>
+            <h1 className="text-4xl text-center my-4 text-blue-700 font-extrabold uppercase">featured List</h1>
             <div className="grid md:grid-cols-2 gap-4 mb-3">
                 {
                     jobs.slice(0,datalength).map(job => <Job key={job.id} job={job}></Job>)

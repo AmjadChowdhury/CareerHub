@@ -17,27 +17,28 @@ const Job = ({ job }) => {
     salary,
   } = job;
   return (
-    <div className="card card-compact bg-purple-200 shadow-xl">
-      <figure>
+    <div className="card card-compact bg-white shadow-xl border-2">
+      <figure className="h-52 p-4">
         <img
+          className="h-full w-full"
           src={logo}
           alt="Shoes"
         />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title">{job_title}</h2>
-        <p>{company_name}</p>
+      <div className="card-body bg-[#0000FF12]">
+        <h2 className="card-title text-2xl font-extrabold">{job_title}</h2>
+        <p className="text-3xl font-bold text-blue-700">{company_name}</p>
         <div>
-            <button className="px-5 py-2 font-extrabold border border-purple-600 rounded mr-2">{remote_or_onsite}</button>
-            <button className="px-5 py-2 font-extrabold border border-purple-600 rounded">{job_type}</button>
+            <button className="px-5 py-2 font-extrabold border-2 border-blue-700 rounded mr-2">{remote_or_onsite}</button>
+            <button className="px-5 py-2 font-extrabold border-2 border-blue-700 rounded">{job_type}</button>
         </div>
         <div className="flex justify-between">
-            <h2 className="flex items-center"><IoLocationOutline className="text-2xl mr-1"></IoLocationOutline>{location}</h2>
-            <h2 className="flex items-center"><BsCurrencyDollar className="text-2xl mr-1"></BsCurrencyDollar>{salary}</h2>
+            <h2 className="flex items-center text-xl font-semibold"><IoLocationOutline className="mr-1 text-blue-700 font-extrabold"></IoLocationOutline>{location}</h2>
+            <h2 className="flex items-center text-xl font-semibold"><BsCurrencyDollar className="mr-1 text-blue-700 font-extrabold"></BsCurrencyDollar>{salary}</h2>
         </div>
         <Link to={`/job/${id}`}>
             <div className="card-actions">
-               <button className="btn btn-primary">View Details</button>
+               <button className="btn bg-blue-700 text-white">View Details</button>
             </div>
         </Link>
       </div>
