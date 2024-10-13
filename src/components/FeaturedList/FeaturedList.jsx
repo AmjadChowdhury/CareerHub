@@ -14,14 +14,14 @@ const FeaturedList = () => {
     },[])
     return (
         <div>
-            <h1 className="text-4xl text-center my-4 text-blue-700 font-extrabold uppercase">featured List</h1>
-            <div className="grid md:grid-cols-2 gap-4 mb-3">
+            <h1 className="text-4xl text-center my-4  text-blue-700 font-extrabold uppercase"><span className="border-b-4 border-b-blue-700 p-2 rounded-b-lg">featured List</span></h1>
+            <div className="grid md:grid-cols-2 gap-4 mb-3 mt-2">
                 {
                     jobs.slice(0,datalength).map(job => <Job key={job.id} job={job}></Job>)
                 }
             </div>
             <div className={`my-5 text-center ${datalength === jobs.length ? 'hidden' : ''}`}>
-                <button onClick={() => setDataLength(jobs.length)} className="btn btn-primary">Show All Jobs</button>
+                <button onClick={() => setDataLength(jobs.length)} className="btn bg-blue-700 text-white font-bold">Show All Jobs</button>
             </div>
         </div>
     );

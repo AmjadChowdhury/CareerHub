@@ -34,11 +34,11 @@ const Job = ({ job }) => {
         </div>
         <div className="flex justify-between">
             <h2 className="flex items-center text-xl font-semibold"><IoLocationOutline className="mr-1 text-blue-700 font-extrabold"></IoLocationOutline>{location}</h2>
-            <h2 className="flex items-center text-xl font-semibold"><BsCurrencyDollar className="mr-1 text-blue-700 font-extrabold"></BsCurrencyDollar>{salary}</h2>
+            <h2 className="flex items-center text-xl font-bold"><BsCurrencyDollar className="mr-1 text-blue-700 font-extrabold"></BsCurrencyDollar>{salary}</h2>
         </div>
         <Link to={`/job/${id}`}>
             <div className="card-actions">
-               <button className="btn bg-blue-700 text-white">View Details</button>
+               <button className="btn bg-blue-700 text-white font-bold">View Details</button>
             </div>
         </Link>
       </div>

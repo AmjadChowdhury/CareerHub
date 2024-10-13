@@ -3,9 +3,9 @@ import './Header.css'
 
 const Header = () => {
     const links = <>
-     <li className="text-purple-600 font-bold"><NavLink to="/">Home</NavLink></li>
-     <li className="text-purple-600 font-bold"><NavLink to="/applied">Applied Jobs</NavLink></li>
-     <li className="text-purple-600 font-bold"><NavLink to="/blog">Blog</NavLink></li>
+     <li className="text-blue-700 font-bold"><NavLink to="/">Home</NavLink></li>
+     <li className="text-blue-700 font-bold"><NavLink to="/applied">Applied Jobs</NavLink></li>
+     <li className="text-blue-700 font-bold"><NavLink to="/blog">Blog</NavLink></li>
     </>
   return (
     <div>
@@ -43,7 +43,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-purple-500 text-white font-bold">Hire me</a>
+          <a className="btn bg-blue-700 text-xl text-white font-bold">Hire me</a>
         </div>
       </div>
     </div>
