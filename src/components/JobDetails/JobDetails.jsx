@@ -25,7 +25,7 @@ const JobDetails = () => {
 
 
     return (
-        <div>
+        <div className="p-2">
             <h1 className="text-4xl font-extrabold text-center mb-5 text-blue-700"><span className="border-b-4 border-blue-700 rounded-lg">Job Details</span></h1>
             <div className="grid md:grid-cols-3 gap-5 mb-5">
                 <div className="md:col-span-2 px-5 py-5 space-y-2 bg-purple-200 rounded-lg flex flex-col justify-center">

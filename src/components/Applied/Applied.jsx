@@ -61,7 +61,7 @@ const Applied = () => {
           <li onClick={() => handleJobsFilter('onsite')}>Onsite</li>
         </ul>
       </div>
-      <div>
+      <div className="p-2">
         {displayJobs.map((job) => (
           <AppliedDetails key={job.id} job={job}></AppliedDetails>
         ))}

@@ -3,9 +3,9 @@ import './Header.css'
 
 const Header = () => {
     const links = <>
-     <NavLink to="/"><li className="md:btn bg-blue-700  text-xl font-bold mr-1 rounded-lg p-2">Home</li></NavLink>
-     <NavLink to="/applied"><li className="md:btn bg-blue-700 text-xl font-bold mr-1 rounded-lg p-2">Applied Jobs</li></NavLink>
-     <NavLink to="/blog"><li className="md:btn bg-blue-700 text-xl font-bold rounded-lg p-2">Blog</li></NavLink>
+     <NavLink to="/"><li className="md:btn md:text-xl font-bold mr-1 rounded-lg p-2 mb-1">Home</li></NavLink>
+     <NavLink to="/applied"><li className="md:btn md:text-xl font-bold mr-1 rounded-lg p-2 mb-1">Applied Jobs</li></NavLink>
+     <NavLink to="/blog"><li className="md:btn md:text-xl font-bold rounded-lg p-2">Blog</li></NavLink>
     </>
   return (
     <div>
