@@ -29,6 +29,7 @@ const Applied = () => {
     }
   };
 
+
   useEffect(() => {
     const storedJobs = getStoredJobs();
 

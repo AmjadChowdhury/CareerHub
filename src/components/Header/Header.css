@@ -1,4 +1,4 @@
-li a.active{
-    font-size: 16px;
-    font-weight: bolder;
+a.active li{
+    background-color: #0000ffCC;
+    color: white;
 }
